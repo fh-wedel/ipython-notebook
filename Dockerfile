@@ -42,6 +42,12 @@ RUN pip install watchdog
 RUN pip install pygments
 RUN pip install oct2py
 
+WORKDIR /tmp
+RUN git clone git://github.com/pybrain/pybrain.git
+RUN cd pybrain; python setup.py install
+RUN rm -rf /tmp/pybrain
+WORKDIR /notebooks
+
 EXPOSE 8888
 
 # run: docker run -d -p 8889:8888 -v /Users/uho/notebooks:/notebooks -e "PASSWORD=ipython" notebook
