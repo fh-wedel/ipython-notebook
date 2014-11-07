@@ -1,7 +1,7 @@
 # Using the Ubuntu image
 FROM ubuntu:14.04
 
-MAINTAINER Ulrich Hoffmann <uho@xlerb.de>
+MAINTAINER Ulrich Hoffmann <uh@fh-wedel.de>
 
 # Make sure apt is up to date
 RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
@@ -33,7 +33,6 @@ RUN pip install pandas
 RUN pip install patsy 
 RUN pip install scikit-learn 
 RUN pip install distribute 
-RUN pip install pandas
 RUN pip install python-dateutil
 RUN pip install statsmodels
 RUN pip install ggplot
