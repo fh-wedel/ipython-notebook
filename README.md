@@ -28,7 +28,7 @@ with numerous additional packages.
 * [Pygments](http://pygments.org/)
 * [oct2py](https://github.com/blink1073/oct2py)
 * [PyBrain](http://pybrain.org/)
-* [Natural Langiage Toolkit](http://www.nltk.org/)
+* [Natural Language Toolkit](http://www.nltk.org/)
 
 ### Installation
 
