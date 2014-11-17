@@ -40,6 +40,7 @@ RUN pip install dexy
 RUN pip install watchdog
 RUN pip install pygments
 RUN pip install oct2py
+RUN pip install nltk
 
 WORKDIR /tmp
 RUN git clone git://github.com/pybrain/pybrain.git
