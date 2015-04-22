@@ -29,6 +29,7 @@ with numerous additional packages.
 * [oct2py](https://github.com/blink1073/oct2py)
 * [PyBrain](http://pybrain.org/)
 * [Natural Language Toolkit](http://www.nltk.org/)
+* [Open Computer Vision](http://opencv.org/)
 
 ### Installation
 
