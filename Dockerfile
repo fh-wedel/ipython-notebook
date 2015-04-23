@@ -48,7 +48,8 @@ RUN cd pybrain; python setup.py install
 RUN rm -rf /tmp/pybrain
 WORKDIR /notebooks
 
-RUN apt-get -qq install python-opencv && ln /dev/null /dev/raw1394
+RUN apt-get -qq install python-opencv 
+RUN ln /dev/null /dev/raw1394
 
 EXPOSE 8888
 
@@ -63,5 +64,4 @@ ADD notebook.sh /
 RUN chmod u+x /notebook.sh
 
 CMD /notebook.sh
-
 # run: docker run -d -p 8889:8888 -v /Users/uho/notebooks:/notebooks -e "PASSWORD=ipython" notebook
